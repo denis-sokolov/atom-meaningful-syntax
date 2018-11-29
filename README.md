@@ -8,4 +8,11 @@ Color your syntax not arbitrarily, but with meaningful color layers. Blue covers
 
 Nested JSON highlighting added for free.
 
-For full TypeScript support, install a custom [language-typescript-react](https://atom.io/packages/language-typescript-react) grammar.
+## Full TypeScript support
+
+For full TypeScript support, install a custom [language-typescript-react](https://atom.io/packages/language-typescript-react) grammar and add [a hack](https://github.com/TypeStrong/atom-typescript/issues/1451#issuecomment-428151082) to [your init file](https://flight-manual.atom.io/hacking-atom/sections/the-init-file/):
+
+```coffee
+atom.packages.onDidTriggerActivationHook "language-typescript-react:grammar-used", ->
+  atom.packages.triggerActivationHook 'language-typescript:grammar-used'
+```
