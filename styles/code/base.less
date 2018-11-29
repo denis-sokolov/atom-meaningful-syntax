@@ -1,0 +1,66 @@
+.syntax--separator,
+.syntax--delimiter,
+.syntax--punctuation,
+.syntax--bracket,
+.syntax--brace,
+.syntax--modifier,
+.syntax--keyword,
+.syntax--storage.syntax--storage {
+  color: @gray;
+  background: none;
+}
+
+.syntax--string {
+  color: @green;
+}
+
+.syntax--punctuation.syntax--string {
+  color: @darkGray;
+}
+
+.syntax--name, // variables
+.syntax--class,
+.syntax--class.syntax--type, // class Foo
+.syntax--new .syntax--type, // new Error
+.syntax--module, // class Foo
+.syntax--inherited-class, // extends Foo
+.syntax--support.syntax--builtin.syntax--class, // Promise
+.syntax--constant.syntax--math, // Math
+.syntax--support.syntax--function, // require()
+.syntax--require, // import = require()
+.syntax--parameters .syntax--name:not(.syntax--type),
+.syntax--variable {
+  color: @lightBlue;
+}
+.syntax--property.syntax--name,
+.syntax--object-literal.syntax--key,
+.syntax--accessor + .syntax--function,
+.syntax--definition.syntax--method,
+.syntax--property {
+  color: @darkBlue;
+}
+.syntax--type {
+  color: @purple;
+}
+.syntax--console.syntax--console.syntax--console,
+.syntax--component {
+  color: @yellow;
+}
+.syntax--attribute-name {
+  color: @darkYellow;
+}
+.syntax--control.syntax--flow,
+.syntax--control.syntax--trycatch,
+.syntax--tag.syntax--name {
+  color: @orange;
+}
+.syntax--constant,
+.syntax--children {
+  color: @yellowGreen;
+}
+.syntax--accessor + .syntax--constant {
+  color: @darkBlue;
+}
+.syntax--operator.syntax--logical {
+  color: @orange;
+}

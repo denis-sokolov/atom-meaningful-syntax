@@ -1,0 +1,30 @@
+.syntax--yaml {
+  .syntax--string {
+    color: @lightGray !important;
+  }
+
+  // - foo:
+  .syntax--tag {
+    color: @darkBlue;
+  }
+
+  // Level 1
+  .syntax--tag:first-child {
+    color: @green;
+  }
+
+  // Level 2
+  .leading-whitespace + .syntax--tag {
+    color: @lightBlue;
+  }
+
+  // Level 3
+  .leading-whitespace + .leading-whitespace + .syntax--tag {
+    color: @orange;
+  }
+
+  // Level 4+
+  .leading-whitespace + .leading-whitespace + .leading-whitespace + .syntax--tag {
+    color: @green;
+  }
+}

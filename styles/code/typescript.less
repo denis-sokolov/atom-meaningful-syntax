@@ -1,0 +1,29 @@
+.syntax--tsx {
+  .syntax--keyword.syntax--as {
+    color: @red;
+  }
+  .syntax--import .syntax--as,
+  .syntax--import .syntax--variable:not(.syntax--alias),
+  .syntax--export .syntax--as {
+    color: @gray;
+  }
+
+  .syntax--import .syntax--string {
+    color: @darkBlue;
+  }
+
+  // React Fragment <>
+  .syntax--invalid.syntax--illegal.syntax--tag.syntax--incomplete.syntax--tsx {
+    color: @gray;
+    background: none;
+  }
+
+  // JSX -> JS curlies
+  .syntax--punctuation.syntax--section.syntax--embedded.syntax--tsx {
+    color: @lightBlue;
+  }
+  // import curlies
+  .syntax--import .syntax--punctuation.syntax--definition.syntax--block {
+    color: gray;
+  }
+}

@@ -1,0 +1,23 @@
+.syntax--gfm {
+  .syntax--heading {
+    color: @green;
+  }
+  .syntax--link {
+    color: @darkGray;
+    .syntax--entity {
+      color: @lightBlue;
+    }
+  }
+  .syntax--list {
+    // Override light blue from “variable” selector in base
+    color: inherit
+  }
+  .syntax--raw {
+    color: @lightBlue;
+  }
+}
+
+// Links in comments
+.syntax--underline {
+  color: inherit;
+}

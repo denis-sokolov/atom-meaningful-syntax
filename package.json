@@ -1,0 +1,13 @@
+{
+  "name": "atom-meaningful-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "Color the code meaningfully, not arbitrarily",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "repository": "https://github.com/denis-sokolov/atom-meaningful-syntax",
+  "license": "ISC",
+  "engines": { "atom": ">=1.0.0 <2.0.0" }
+}

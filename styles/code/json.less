@@ -1,0 +1,26 @@
+.syntax--json {
+  .syntax--value > .syntax--string,
+  .syntax--array > .syntax--string {
+    color: @lightGray !important;
+  }
+
+  // Level 1
+  .syntax--structure .syntax--structure .syntax--string:not(.syntax--punctuation) {
+    color: @green;
+  }
+
+  // Level 2
+  .syntax--structure .syntax--structure .syntax--structure .syntax--string:not(.syntax--punctuation) {
+    color: @lightBlue;
+  }
+
+  // Level 3
+  .syntax--structure .syntax--structure .syntax--structure .syntax--structure .syntax--structure .syntax--string:not(.syntax--punctuation) {
+    color: @orange;
+  }
+
+  // Level 4+
+  .syntax--structure .syntax--structure .syntax--structure .syntax--structure .syntax--structure .syntax--structure .syntax--structure .syntax--string:not(.syntax--punctuation) {
+    color: @green;
+  }
+}
