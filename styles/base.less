@@ -1,21 +1,19 @@
-@lightGray: hsl(0, 0%, 75%);
-@gray: hsl(0, 0%, 50%);
-@darkGray: hsl(0, 0%, 30%);
-@nearBlack: hsl(0, 0%, 10%);
+@import "colors";
 
-@red: hsl(0, 100%, 60%);
-
-@yellow: hsl(40, 50%, 50%);
-@darkYellow: hsl(40, 50%, 30%);
-@orange: hsl(25, 66%, 62%);
-
-@yellowGreen: #b5bd68;
-@green: #98c379;
-
-@lightBlue: hsl(208, 32%, 73%);
-@darkBlue: hsl(208, 32%, 53%);
-
-@purple: hsl(277, 22%, 66%);
+// Import user’s settings where they can modify colors
+// ~ expansion does not work, @plugin is too complex,
+// Proper settings is less convenient to the user and more work.
+// The line between what’s stupid and what works is blurry
+@import (reference, optional) "../../../../../../../../../.atom/styles.less";
+@import (reference, optional) "../../../../../../../../.atom/styles.less";
+@import (reference, optional) "../../../../../../../.atom/styles.less";
+@import (reference, optional) "../../../../../../.atom/styles.less";
+@import (reference, optional) "../../../../../.atom/styles.less";
+@import (reference, optional) "../../../../.atom/styles.less";
+@import (reference, optional) "../../../.atom/styles.less";
+@import (reference, optional) "../../.atom/styles.less";
+@import (reference, optional) "../.atom/styles.less";
+@import (reference, optional) ".atom/styles.less";
 
 .editor * {
   font-style: normal !important;
@@ -24,7 +22,7 @@
 }
 
 .selection .region {
-  background-color: @nearBlack;
+  background-color: @meaningful_nearBlack;
 }
 
 @import "code/index";

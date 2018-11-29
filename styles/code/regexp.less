@@ -1,23 +1,23 @@
 .syntax--regexp {
   .syntax--control {
-    color: @orange;
+    color: @meaningful_orange;
   }
   .syntax--back-reference {
-    color: @gray;
+    color: @meaningful_gray;
   }
 
   .syntax--group {
-    color: @purple;
+    color: @meaningful_purple;
   }
 
   // (?:), the class name is confusing
   .syntax--group.syntax--capture {
-    color: @gray;
+    color: @meaningful_gray;
   }
 
   // (?!foo)
   .syntax--group.syntax--assertion,
   .syntax--group.syntax--assertion * {
-    color: @gray;
+    color: @meaningful_gray;
   }
 }
