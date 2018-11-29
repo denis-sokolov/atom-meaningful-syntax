@@ -1,7 +1,7 @@
 {
   "name": "atom-meaningful-syntax",
   "theme": "syntax",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Color the code meaningfully, not arbitrarily",
   "keywords": [
     "syntax",
