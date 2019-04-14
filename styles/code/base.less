@@ -36,10 +36,17 @@
 .syntax--object-literal.syntax--key,
 .syntax--accessor + .syntax--function,
 .syntax--definition.syntax--method,
-.syntax--object-literal.syntax--key > .syntax--quoted.syntax--string, // 'foo':, but not ['foo']:
 .syntax--property {
   color: @meaningful_darkBlue;
 }
+
+// Quoted string object keys
+// 'foo':, but not ['foo']:
+.syntax--object-literal.syntax--key > .syntax--quoted:first-child,
+.syntax--field.syntax--declaration > .syntax--quoted:first-child {
+  color: @meaningful_darkBlue;
+}
+
 .syntax--type {
   color: @meaningful_purple;
 }
